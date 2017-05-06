@@ -1,0 +1,25 @@
+* Different versions can help you visualise the changes that have been made
+* This allows you to easily look to the changes, because if the code
+has stopped working and it was working before, we can see what has been changed
+
+* Entire history will allow you see changes and improvementst that you have made
+* This allows you to take what you have previously learnt and apply it again
+
+* Pros - it allows a person who make logical changes before committing
+* Cons - reliant on persons to know when to commit changes
+
+It will depend on the logic of the system
+Git - is designed as a repository of all files
+Gdocs - assumes that each file will be separate
+
+git log  - view the log of changes made
+git diff - see the difference between two versions (old new)
+get checkout - go back to a previous version
+
+Version control allows you to more confidently makes changes
+Allows you to revert to a working version if there are unexpected changes
+
+Will use git for version control in data research
+
+Note - correct pappu version:
+746f762e38b5bbb7d0b837464ef6ec3f8ee5bf91
