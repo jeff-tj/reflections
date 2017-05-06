@@ -23,3 +23,13 @@ Will use git for version control in data research
 
 Note - correct pappu version:
 746f762e38b5bbb7d0b837464ef6ec3f8ee5bf91
+
+git init - to start a git repository
+
+Before committing - good practice to "git checkout master" to get back to 
+the master branch
+git diff - no arguments - returns files that are difference between the 
+staging area and working directory
+git diff --staged: gives the difference between staging area and most recent
+commit
+git reset --hard: gets rid of changes in the wd and staging area

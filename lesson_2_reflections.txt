@@ -6,16 +6,40 @@
 Add files to the staging area - gives you control over the files to commit
 Use: git add - add files to the staging area
 
-How can you use the staging area to make sure you have one commit per logical
+*How can you use the staging area to make sure you have one commit per logical
 change?
 
-What are some situations when branches would be helpful in keeping your history
+Two ways: first check that git diff --staged shows only the chanegs that you
+expect. You can also view the cahnges made.
+Secondly - by entering a reason, you can also force yourself to justify
+the logic of your change
+
+*What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-How do the diagrams help you visualize the branch structure?
+Branches - "master" is the main branch.
+Use "git branch" no argument to see the branches. Note that "*" denotes the 
+current checked out branch. And supplying an argument creates a branch with 
+that argument.
+Branches help by allowing you to pursue parallel changes.
+Allows you to collaborate.
 
-What is the result of merging two branches together? Why do we represent it in
+*How do the diagrams help you visualize the branch structure?
+
+See what parts of the structure are reachable from your current position.
+
+*What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-What are the pros and cons of Gits automatic merging vs. always doing merges
+We merge a branch into a master branch - git uses the previous fork to determine what should be kept.
+
+Can also merge changes from mastwer into your branch.
+
+*What are the pros and cons of Gits automatic merging vs. always doing merges
 manually?
+
+Use "git show" to see the only chnages compared to parent.
+git branch -d branch_name to delete a branch - only deletes the label for 
+the commits
+Manual - gives you more control.
+Automatic - would regquire more high lvel logic.
